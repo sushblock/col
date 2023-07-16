@@ -37,10 +37,5 @@
   },
   "devDependencies": {
     "prisma": "^5.0.0"
-  },
-  "browser": {
-    "fs": false,
-    "os": false,
-    "path": false
   }
 }
