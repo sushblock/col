@@ -4,7 +4,7 @@ import myUser from "@/app/actions/getUser";
 
 export const runtime = 'edge';
 export const preferredRegion = 'bom1';
-export const revalidate = 1200;
+
 
 export async function POST(request: NextRequest) {
     const currentUser = await myUser();

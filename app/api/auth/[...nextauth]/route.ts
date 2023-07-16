@@ -7,7 +7,6 @@ import prisma from "@/app/lib/prismadb";
 
 export const runtime = 'edge';
 export const preferredRegion = 'bom1';
-export const revalidate = 1200;
 
 export const authOptions: AuthOptions = {
     adapter: PrismaAdapter(prisma),

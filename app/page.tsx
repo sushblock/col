@@ -5,8 +5,8 @@ import myUser from "./actions/getUser";
 
 
 const images = [
-  '/a.jpg',
-  '/b.jpg'
+  '/a.avif',
+  '/b.avif'
 ]
 
 interface HomeProps {

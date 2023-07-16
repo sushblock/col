@@ -4,7 +4,7 @@ import * as bcrypt from 'bcrypt';
 
 export const runtime = 'edge';
 export const preferredRegion = 'bom1';
-export const revalidate = 1200;
+
 
 export async function POST(request: NextRequest){
     const body = await request.json();
