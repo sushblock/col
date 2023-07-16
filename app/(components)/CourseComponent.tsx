@@ -24,7 +24,7 @@ export default function CourseComponent({data,key,currentUser}:CourseComponent) 
 
                 <div className="border-[2px] border-yellow-400 relative">
                         <Image width={200} height={200}  src={data.imageSrc} alt={data.name}
-                        className="object-cover w-[320px] h-[150px]"
+                        className="object-cover w-[320px] h-auto]"
                         />
                 </div>
 

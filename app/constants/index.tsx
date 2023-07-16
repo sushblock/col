@@ -1,18 +1,18 @@
 export const MenuItems = [
     { 
         id: 1,  
-        name:"My learning",
+        name:"My Learning",
         link: '/'
     },
 
     {
         id: 2,
-        name:"My card",
+        name:"My Cart",
         link:'/basket'
     },
     {
         id: 3,
-        name:"My courses",
+        name:"My Courses",
         link:'/mycourses'
     },
     {

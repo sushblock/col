@@ -56,7 +56,7 @@ export default function Navbar({ myUser, basketItems }: NavbarProps) {
                 <div className="flex items-center justify-between gap-2">
                     <div className="flex items-center gap-6 flex-1 relative">
                         <Link href="/">
-                            <Image src={"/logo.svg"} alt="Logo" width={100} height={30} />
+                            <Image src={"/logo.svg"} alt="Logo" width={96} height={30} className="w-22 h-auto"/>
                         </Link>
                         <form
                             className="lg:flex-1 lg:flex md:flex-1 md:flex"
@@ -85,11 +85,11 @@ export default function Navbar({ myUser, basketItems }: NavbarProps) {
                         </div>
                         <div className="relative">
                             <Link href="/basket">
-                                <MdOutlineShoppingCart className="h-6 w-10" />
-                            </Link>
+                                <MdOutlineShoppingCart className="h-6 w-10" />                            
                             <div className="absolute -right-1 -bottom-2 bg-blue-500 rounded-full w-6 h-6 flex justify-center items-center text-white">
                                 {basketItems.length}
                             </div>
+                            </Link>
                         </div>
                     </div>
                     <div className="flex items-center gap-3">
@@ -138,11 +138,11 @@ export default function Navbar({ myUser, basketItems }: NavbarProps) {
                     </div>
                     <div className="relative">
                         <Link href="/basket">
-                            <MdOutlineShoppingCart className="h-6 w-10" />
-                        </Link>
+                            <MdOutlineShoppingCart className="h-6 w-10" />                        
                         <div className="absolute -right-1 -bottom-2 bg-blue-500 rounded-full w-6 h-6 flex justify-center items-center text-white">
                             {basketItems.length}
                         </div>
+                        </Link>
                     </div>
                 </div>
             </div>
