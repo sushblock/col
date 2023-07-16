@@ -8,7 +8,7 @@ import getBasketItems from './actions/getBasketItems'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'CoL',
+  title: 'Center of Learning Excellence',
   description: 'Find your teacher!',
 }
 
