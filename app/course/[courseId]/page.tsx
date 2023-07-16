@@ -1,4 +1,4 @@
-import {myUser} from "@/app/actions/getUser"
+import myUser from "@/app/actions/getUser"
 import getCourseById from "@/app/actions/getCourseById"
 import Induvidual from "../Individual"
 

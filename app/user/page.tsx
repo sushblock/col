@@ -1,6 +1,5 @@
-import {myUser} from "../actions/getUser"
+import myUser from "../actions/getUser"
 import ProfileComponent from "./ProfileComponent"
-
 
 export default async function page() {
 

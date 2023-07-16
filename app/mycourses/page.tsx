@@ -1,6 +1,7 @@
-import { myUser } from "../actions/getUser"
+import myUser from "../actions/getUser"
 import getCurrUsersCourse from "../actions/getCurrUsersCourse"
 import MyCourseClient from "./MyCourseClient"
+
 
 interface IParams {
     params: {

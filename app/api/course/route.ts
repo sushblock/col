@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import prisma from "@/app/lib/prismadb";
-import { myUser } from "@/app/actions/getUser";
+import myUser from "@/app/actions/getUser";
 
 export async function POST(request: Request) {
     const currentUser = await myUser();

@@ -2,7 +2,7 @@
 import prisma from '@/app/lib/prismadb'
 import { NextResponse } from "next/server"
 import bcrypt from 'bcrypt'
-import {myUser} from '@/app/actions/getUser'
+import myUser from '@/app/actions/getUser'
 
 interface IParams {
     userId?:string

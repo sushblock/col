@@ -1,5 +1,5 @@
 import prisma from "@/app/lib/prismadb"
-import { myUser } from "./getUser"
+import myUser from "./getUser"
 
 export default async function getCurrUsersCourse() {
 

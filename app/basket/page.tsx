@@ -1,7 +1,6 @@
 import CourseComponent from "../(components)/CourseComponent";
 import getBasketItems from "../actions/getBasketItems";
-import { myUser } from "../actions/getUser";
-
+import myUser from "../actions/getUser";
 
 export default async function page() {
 

@@ -1,5 +1,5 @@
 import prisma from '../lib/prismadb';
-import {myUser} from './getUser';
+import myUser from './getUser';
 
 
 export default async function getBasketItems() {
