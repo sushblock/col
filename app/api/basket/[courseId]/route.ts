@@ -1,14 +1,18 @@
-import { NextResponse } from "next/server";
+import { NextResponse, NextRequest } from "next/server";
 
 import myUser from "@/app/actions/getUser";
 import prisma from '@/app/lib/prismadb'
 
+export const config = {
+    runtime: 'edge', // this is a pre-requisite
+    regions: ['bom1'], // only execute this function on iad1
+};
 
 interface IParams {
     courseId?:string;
 }
 
-export async function POST(request:Request, {params}:{params:IParams}) {
+export async function POST(request:NextRequest, {params}:{params:IParams}) {
     const currentUser = await myUser();
 
     if(!currentUser) {
@@ -38,7 +42,7 @@ export async function POST(request:Request, {params}:{params:IParams}) {
 }
 
 
-export async function DELETE(request:Request, {params}: {params:IParams}) {
+export async function DELETE(request:NextRequest, {params}: {params:IParams}) {
     const currentUser = await myUser();
 
     if(!currentUser) {

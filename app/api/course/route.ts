@@ -1,8 +1,13 @@
-import { NextResponse } from "next/server";
+import { NextResponse, NextRequest } from "next/server";
 import prisma from "@/app/lib/prismadb";
 import myUser from "@/app/actions/getUser";
 
-export async function POST(request: Request) {
+export const config = {
+    runtime: 'edge', // this is a pre-requisite
+    regions: ['bom1'], // only execute this function on iad1
+};
+
+export async function POST(request: NextRequest) {
     const currentUser = await myUser();
 
     if(!currentUser) {
