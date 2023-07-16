@@ -5,10 +5,6 @@ import bcrypt from 'bcrypt'
 import myUser from '@/app/actions/getUser'
 
 
-export const runtime = 'edge';
-export const preferredRegion = 'bom1';
-
-
 interface IParams {
     userId?:string
 }

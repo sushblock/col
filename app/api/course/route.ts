@@ -2,9 +2,6 @@ import { NextResponse, NextRequest } from "next/server";
 import prisma from "@/app/lib/prismadb";
 import myUser from "@/app/actions/getUser";
 
-export const runtime = 'edge';
-export const preferredRegion = 'bom1';
-
 
 export async function POST(request: NextRequest) {
     const currentUser = await myUser();

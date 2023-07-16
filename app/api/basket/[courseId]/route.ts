@@ -3,10 +3,6 @@ import { NextResponse, NextRequest } from "next/server";
 import myUser from "@/app/actions/getUser";
 import prisma from '@/app/lib/prismadb'
 
-export const runtime = 'edge';
-export const preferredRegion = 'bom1';
-
-
 interface IParams {
     courseId?:string;
 }

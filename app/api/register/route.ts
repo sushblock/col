@@ -2,9 +2,6 @@ import {NextResponse, NextRequest} from 'next/server';
 import prisma from '@/app/lib/prismadb';
 import * as bcrypt from 'bcrypt';
 
-export const runtime = 'edge';
-export const preferredRegion = 'bom1';
-
 
 export async function POST(request: NextRequest){
     const body = await request.json();
