@@ -13,6 +13,9 @@ export const metadata = {
 }
 
 export const dynamic = 'force-dynamic'
+export const runtime = 'edge';
+export const preferredRegion = 'bom1';
+export const revalidate = 1200;
 
 export default async function RootLayout({
   children,

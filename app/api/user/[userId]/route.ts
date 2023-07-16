@@ -5,7 +5,7 @@ import bcrypt from 'bcrypt'
 import myUser from '@/app/actions/getUser'
 
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 export const preferredRegion = 'bom1';
 export const revalidate = 1200;
 
