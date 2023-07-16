@@ -22,11 +22,9 @@
     "axios": "^1.4.0",
     "bcrypt": "^5.1.0",
     "cloudinary": "^1.37.3",
-    "fs": "^0.0.1-security",
     "next": "^13.4.10",
     "next-auth": "^4.22.1",
     "next-cloudinary": "^4.13.0",
-    "path": "^0.12.7",
     "postcss": "8.4.24",
     "query-string": "^8.1.0",
     "react": "18.2.0",
@@ -39,5 +37,10 @@
   },
   "devDependencies": {
     "prisma": "^5.0.0"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
   }
 }
