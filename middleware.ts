@@ -2,6 +2,10 @@ import { getToken } from 'next-auth/jwt'
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
+export const runtime = 'nodejs';
+export const preferredRegion = 'bom1';
+export const revalidate = 1200;
+
 export async function middleware(req: NextRequest) {
   const token = await getToken({ req })
 

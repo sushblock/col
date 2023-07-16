@@ -3,10 +3,9 @@ import myUser from "@/app/actions/getUser";
 import prisma from '@/app/lib/prismadb';
 
 
-export const config = {
-    runtime: 'edge', // this is a pre-requisite
-    regions: ['bom1'], // only execute this function on iad1
-};
+export const runtime = 'nodejs';
+export const preferredRegion = 'bom1';
+export const revalidate = 1200;
 
 interface IParams {
     courseId?:string

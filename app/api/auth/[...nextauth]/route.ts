@@ -5,10 +5,9 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
 import prisma from "@/app/lib/prismadb";
 
-export const config = {
-    runtime: 'edge', // this is a pre-requisite
-    regions: ['bom1'], // only execute this function on iad1
-};
+export const runtime = 'nodejs';
+export const preferredRegion = 'bom1';
+export const revalidate = 1200;
 
 export const authOptions: AuthOptions = {
     adapter: PrismaAdapter(prisma),

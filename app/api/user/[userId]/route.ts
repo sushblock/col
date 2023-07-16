@@ -5,10 +5,9 @@ import bcrypt from 'bcrypt'
 import myUser from '@/app/actions/getUser'
 
 
-export const config = {
-    runtime: 'edge', // this is a pre-requisite
-    regions: ['bom1'], // only execute this function on iad1
-};
+export const runtime = 'nodejs';
+export const preferredRegion = 'bom1';
+export const revalidate = 1200;
 
 interface IParams {
     userId?:string
