@@ -1,4 +1,4 @@
-import prisma from '@/app/lib/prismadb';
+import prisma from '@/lib/prismadb';
 import queryString from "query-string";
 
 export default async function getAllCourses(params: any) {

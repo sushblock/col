@@ -1,8 +1,8 @@
 'use client'
 
 import axios from "axios"
-import { SafeUser,safeCourse } from "../types"
-import Button from "../(components)/Button"
+import { SafeUser,safeCourse } from "@/types"
+import Button from "@/(components)/Button"
 import { useRouter } from "next/navigation"
 import Image from "next/image"
 import { FormEvent, useState } from "react"

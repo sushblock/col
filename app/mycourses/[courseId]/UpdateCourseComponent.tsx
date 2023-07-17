@@ -1,14 +1,14 @@
 'use client';
 
 
-import Input from "@/app/(components)/Inputs/Input";
-import ImageUpload from "@/app/(components)/Inputs/ImageUpload";
+import Input from "@/(components)/Inputs/Input";
+import ImageUpload from "@/(components)/Inputs/ImageUpload";
 import { useRouter } from 'next/navigation'
 import axios from "axios";
 import { ChangeEvent, FormEvent, useState } from "react";
 import { toast } from "react-hot-toast";
-import Button from "@/app/(components)/Button";
-import { getPriceWithCurrency } from "@/app/utils/AllUtils";
+import Button from "@/(components)/Button";
+import { getPriceWithCurrency } from "@/utils/AllUtils";
 
 
 interface CourseProps {

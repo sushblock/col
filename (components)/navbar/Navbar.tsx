@@ -1,6 +1,6 @@
 'use client';
 
-import { SafeUser } from "@/app/types";
+import { SafeUser } from "@/types";
 import Link from "next/link";
 import { FormEvent, useState } from "react";
 import { MdOutlineShoppingCart } from 'react-icons/md';
@@ -77,12 +77,6 @@ export default function Navbar({ myUser, basketItems }: NavbarProps) {
                         <div>
                             <a href={myUser ? "/create" : "/login"}>Teach on CoL</a>
                         </div>
-                        <div>
-                            <a href={myUser ? "/videochat" : "/login"}>Video Chat</a>
-                        </div>
-                        <div>
-                            <a href={myUser ? "/whiteboard" : "/login"} target="_blank" referrerPolicy="no-referrer">White Board</a>
-                        </div>
                         <div className="relative">
                             <Link href="/basket">
                                 <MdOutlineShoppingCart className="h-6 w-10" />                            
@@ -129,12 +123,6 @@ export default function Navbar({ myUser, basketItems }: NavbarProps) {
                     </div>
                     <div>
                         <a href={myUser ? "/create" : "/login"}>Teach on CoL</a>
-                    </div>
-                    <div>
-                        <a href={myUser ? "/videochat" : "/login"}>Video Chat</a>
-                    </div>
-                    <div>
-                        <a href={myUser ? "/whiteboard" : "/login"} target="_blank" referrerPolicy="no-referrer">White Board</a>
                     </div>
                     <div className="relative">
                         <Link href="/basket">

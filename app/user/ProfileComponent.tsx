@@ -1,10 +1,10 @@
 'use client';
 
-import Input from "../(components)/Inputs/Input";
+import Input from "@/(components)/Inputs/Input";
 import { useRouter } from "next/navigation";
 import axios from "axios";
 import { FormEvent, useState } from "react";
-import Button from "../(components)/Button";
+import Button from "@/(components)/Button";
 import { toast } from "react-hot-toast";
 
 

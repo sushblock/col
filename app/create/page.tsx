@@ -1,9 +1,9 @@
 'use client';
 
 import { ChangeEvent, FormEvent, useState } from "react";
-import Input from "../(components)/Inputs/Input";
-import Button from "../(components)/Button";
-import ImageUpload from "../(components)/Inputs/ImageUpload";
+import Input from "@/(components)/Inputs/Input";
+import Button from "@/(components)/Button";
+import ImageUpload from "@/(components)/Inputs/ImageUpload";
 import { useRouter } from "next/navigation";
 import axios from "axios";
 

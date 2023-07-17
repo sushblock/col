@@ -2,8 +2,7 @@ import axios from "axios";
 import { useRouter } from "next/navigation";
 import React, { useCallback, useMemo } from "react";
 
-import { SafeUser } from "../types";
-import { Router } from "next/router";
+import { SafeUser } from "@/types";
 
 interface IUseBasket {
     courseId: string;

@@ -1,5 +1,5 @@
-import { SafeUser } from "@/app/types"
-import { MenuItems } from "@/app/constants"
+import { SafeUser } from "@/types"
+import { MenuItems } from "@/constants"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
 import { signOut } from "next-auth/react"

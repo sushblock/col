@@ -2,9 +2,9 @@
 
 
 import Image from "next/image"
-import { SafeUser, safeCourse } from "../types"
+import { SafeUser, safeCourse } from "@/types"
 import { useRouter } from "next/navigation";
-import { getPriceWithCurrency } from "../utils/AllUtils";
+import { getPriceWithCurrency } from "@/utils/AllUtils";
 
 interface CourseComponent {
     data:safeCourse,

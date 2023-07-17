@@ -1,6 +1,6 @@
-import CourseComponent from "../(components)/CourseComponent";
-import getAllCourses from "../actions/getAllCourses"
-import myUser from "../actions/getUser"
+import CourseComponent from "@/(components)/CourseComponent";
+import getAllCourses from "@/actions/getAllCourses"
+import myUser from "@/actions/getUser"
 
 
 interface HomeProps {

@@ -1,7 +1,7 @@
 import { NextResponse, NextRequest } from "next/server";
 
-import myUser from "@/app/actions/getUser";
-import prisma from '@/app/lib/prismadb'
+import myUser from "@/actions/getUser";
+import prisma from '@/lib/prismadb'
 
 interface IParams {
     courseId?:string;

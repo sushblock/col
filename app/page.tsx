@@ -1,7 +1,7 @@
-import CourseComponent from "./(components)/CourseComponent";
-import SliderMain from "./(components)/SliderMain";
-import getAllCourses from "./actions/getAllCourses";
-import myUser from "./actions/getUser";
+import CourseComponent from "../(components)/CourseComponent";
+import SliderMain from "../(components)/SliderMain";
+import getAllCourses from "@/actions/getAllCourses";
+import myUser from "@/actions/getUser";
 
 
 const images = [

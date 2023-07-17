@@ -1,4 +1,4 @@
-import getCourseById from "@/app/actions/getCourseById";
+import getCourseById from "@/actions/getCourseById";
 import UpdateCourseComponent from "./UpdateCourseComponent";
 
 interface IParams {

@@ -1,7 +1,7 @@
 'use client'
 
 import React, { ChangeEvent, FormEvent, useState } from 'react'
-import Input from '../(components)/Inputs/Input'
+import Input from '@/(components)/Inputs/Input'
 import {signIn} from 'next-auth/react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
